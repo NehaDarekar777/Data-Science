@@ -1,0 +1,2 @@
+{"ocean_proximity": {"<1H OCEAN": 4, "INLAND": 5, "NEAR OCEAN": 2, "NEAR BAY": 3, "ISLAND": 1},
+ "Column Name": ["longitude", "latitude", "housing_median_age", "total_rooms", "total_bedrooms", "population", "households", "median_income", "ocean_proximity"]}
