@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CALIFORNIA HOUSE PRICE PREDICTION</title>
+      <title>CALIFORNIA HOUSE PRICE PREDICTION</title>
 </head>
-<!-- <body background='https://images.wallpapersden.com/image/download/california-sea-buildings_ZmxsZWeUmZqaraWkpJRmaGhrrWxrbQ.jpg'
-    style="background-repeat: no-repeat;background-size: 100%"> -->
     <h1>CALIFORNIA HOUSE PRICE PREDICTION</h1>
 
-   
+   <form action="/predict" method="POST">
     
-    <form method = "GET" , action="/predicted price">
-   
-    <label>longitude: </label><input type="number" step="any" name="longitude"><br><br>
+  
+    <label>longitude: </label>
+        <input type="number" step="any" name="longitude"><br><br>
 
-    <label>latitude: </label><input type="number" step="any" name="latitude "><br><br>
+    <label>latitude: </label>
+        <input type="number" step="any" name="latitude "><br><br>
 
-    <label>housing_median_age: </label><input type="number" step="any" name="housing_median_age"><br><br>
+    <label>housing_median_age: </label>
+        <input type="number" step="any" name="housing_median_age"><br><br>
 
-    <label>total_rooms : </label><input type="number" step="any" name="total_rooms "><br><br>
+    <label>total_rooms : </label>
+        <input type="number" step="any" name="total_rooms "><br><br>
 
-    <label> total_bedrooms: </label><input type="number" step="any" name=" total_bedrooms"><br><br>
+    <label> total_bedrooms: </label>
+        <input type="number" step="any" name=" total_bedrooms"><br><br>
 
-    <label> population: </label><input type="number" step="any" name=" population"><br><br>
+    <label> population: </label>
+        <input type="number" step="any" name=" population"><br><br>
 
-    <label>households : </label><input type="number" step="any" name="households "><br><br>
+    <label>households : </label>
+        <input type="number" step="any" name="households "><br><br>
 
-    <label>median_income : </label><input type="number" step="any" name="median_income "><br><br>
+    <label>median_income : </label>
+        <input type="number" step="any" name="median_income "><br><br>
 
     <label>ocean_proximity:</label>
         <select name = "ocean_proximity">
@@ -42,13 +45,16 @@
         </select>
         <br>
         <br>
-        <input type = "submit" value="SUBMIT">
+        <input type = "submit" value="PREDICT">
 
         <br>
+       
+      {{predict_value }}
 
-        <h4><strong>House Price will be <b> {{ predict_price }} $ </b> </strong></h4>
-    
+</form>
+
+
+
 </body>
+
 </html>
-
-
