@@ -1,61 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-      <title>CALIFORNIA HOUSE PRICE PREDICTION</title>
+    <title>CALIFORNIA HOUSE PRICE PREDICTION</title>
 </head>
+<body>
     <h1>CALIFORNIA HOUSE PRICE PREDICTION</h1>
 
-   <form action="/predict" method="POST">
-    
-  
-    <label>longitude: </label>
-        <input type="number"  name="longitude"><br><br>
+    <form action="/predict" method="POST">
 
-    <label>latitude: </label>
-        <input type="number"  name="latitude "><br><br>
+        <label>longitude:</label>
+        <input type="number" name="longitude"><br><br>
 
-    <label>housing_median_age: </label>
-        <input type="number"  name="housing_median_age"><br><br>
+        <label>latitude:</label>
+        <input type="number" name="latitude"><br><br>
 
-    <label>total_rooms : </label>
-        <input type="number" name="total_rooms "><br><br>
+        <label>housing_median_age:</label>
+        <input type="number" name="housing_median_age"><br><br>
 
-    <label> total_bedrooms: </label>
-        <input type="number" name=" total_bedrooms"><br><br>
+        <label>total_rooms:</label>
+        <input type="number" name="total_rooms"><br><br>
 
-    <label> population: </label>
-        <input type="number" name=" population"><br><br>
+        <label>total_bedrooms:</label>
+        <input type="number" name="total_bedrooms"><br><br>
 
-    <label>households : </label>
-        <input type="number" name="households "><br><br>
+        <label>population:</label>
+        <input type="number" name="population"><br><br>
 
-    <label>median_income : </label>
-        <input type="number"  name="median_income "><br><br>
+        <label>households:</label>
+        <input type="number" name="households"><br><br>
 
-    <label>ocean_proximity:</label>
-        <select name = "ocean_proximity">
-            <option value = "ISLAND">ISLAND</option>
-            <option value = "NEAR OCEAN">NEAR OCEAN</option>
-            <option value = "NEAR BAY">NEAR BAY</option>
-            <option value = "1H OCEAN">1H OCEAN</option>
-            <option value = "INLAND">INLAND</option>
-           
-        <br>
-        
+        <label>median_income:</label>
+        <input type="number" name="median_income"><br><br>
+
+        <label>ocean_proximity:</label>
+        <select name="ocean_proximity">
+            <option value="ISLAND">ISLAND</option>
+            <option value="NEAR OCEAN">NEAR OCEAN</option>
+            <option value="NEAR BAY">NEAR BAY</option>
+            <option value="1H OCEAN">1H OCEAN</option>
+            <option value="INLAND">INLAND</option>
         </select>
-        <br>
-        <br>
-        <input type = "submit" value="PREDICT">
+        <br><br>
 
-        <br>
-       
-      {{predicted_price }}
+        <input type="submit" value="PREDICT"><br><br>
 
-</form>
+    </form>
 
-
+    <!-- Placeholder for the predicted price. This will be filled dynamically by the server response. -->
+    <div id="predicted_price"></div>
 
 </body>
-
-</html>
 </html>
