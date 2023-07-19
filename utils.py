@@ -36,7 +36,7 @@ class CaliforniaHouse():
     def price_prediction(self):
             self.load_data()
 
-            ocean_proximity       =self.json_data['ocean_proximity'][self.ocean_proximity]
+            ocean_proximity =self.json_data['ocean_proximity'][self.ocean_proximity]
 
             test_array = np.zeros([1,self.model.n_features_in_])
 
